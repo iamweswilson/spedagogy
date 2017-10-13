@@ -5,6 +5,11 @@
 # subnav is an optional collection of items that will appear in a pulldown menu
 #
 
-# - name: Section Link
-#   link: /link-url/
-
+- name: About
+  link: /about/
+- name: Professional Development
+  link: /professional-development/
+- name: Resources
+  link: /resources/
+- name: Contact
+  link: /contact/

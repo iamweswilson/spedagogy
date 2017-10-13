@@ -1,72 +1,226 @@
-html, body {
-  height: 100%;
-  width: 100%; }
-
-h1, h2, h3 {
-  color: white;
-  text-transform: uppercase; }
+body {
+  font-family: 'Raleway', sans-serif; }
 
 p {
-  color: white; }
-
-.navbar-header {
-  display: none; }
+  margin: 0 0 20px; }
 
 .navbar-default {
-  background-color: transparent;
-  border-color: transparent; }
+  background-color: #212E38;
+  border-color: #212E38;
+  border-radius: 0;
+  margin-bottom: 0; }
 
-.index {
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/landing-bkgd.jpg") center center no-repeat;
-  background-size: cover;
-  position: relative; }
+.navbar-brand img {
+  height: 20px; }
 
-.centered-wrapper {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 420px;
-  max-width: 96%;
-  text-align: center; }
-  .centered-wrapper img {
-    width: 70%;
+.navbar-inverse .navbar-nav > li > a {
+  color: #ddd;
+  text-transform: uppercase;
+  font-size: 0.9em; }
+
+.home-hero {
+  padding: 60px 0;
+  min-height: 300px;
+  position: relative;
+  text-align: center;
+  background: #57BBAB; }
+  .home-hero :after {
+    background: linear-gradient(to right, #bcbcbc 25%, #FEC94B 25%, #FEC94B 50%, #EE5948 50%, #EE5948 75%, #505CA2 75%);
+    position: absolute;
+    content: '';
+    height: 5px;
+    right: 0;
+    left: 0;
+    bottom: 0; }
+  .home-hero .logo {
+    max-height: 230px;
     margin-bottom: 40px; }
-  .centered-wrapper p {
+  .home-hero h1 {
+    text-align: center;
     color: white;
-    font-size: 14px; }
-  .centered-wrapper a.learn-more {
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: normal; }
+  .home-hero h3 {
+    color: white;
+    padding: 15px 40px;
+    font-size: 1.5em;
+    min-width: 80%;
+    margin: 0; }
+  .home-hero .learn-more-btn {
+    border-radius: 25px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    text-transform: uppercase;
+    padding: 11px 65px;
     display: inline-block;
-    margin-top: 30px; }
+    margin: 30px 0; }
+    .home-hero .learn-more-btn:hover, .home-hero .learn-more-btn:focus {
+      background: rgba(255, 255, 255, 0.3);
+      color: white;
+      text-decoration: none; }
+    .home-hero .learn-more-btn .btn-icon {
+      max-width: 25px;
+      display: inline-block; }
+      .home-hero .learn-more-btn .btn-icon .right {
+        margin-left: 20px; }
+
+.definition {
+  padding: 60px 0 10px;
+  text-align: center; }
+  .definition h2 {
+    margin: 0 0 40px;
+    font-size: 2.3em;
+    text-align: center; }
+
+.how-icons {
+  width: 130px;
+  margin-bottom: 30px; }
+
+.full-width {
+  width: 100%;
+  padding: 50px 0;
+  margin: 40px 0; }
+  .full-width.definition-section {
+    background: #47B3E6;
+    color: white;
+    text-align: left; }
+    .full-width.definition-section p {
+      margin: 0 0 10px; }
+    .full-width.definition-section h5 {
+      font-weight: bold;
+      font-size: 30px;
+      text-align: right;
+      display: inline-block; }
+    .full-width.definition-section .left {
+      text-align: right; }
+    .full-width.definition-section .right {
+      border-left: 1px solid #318CC0;
+      padding-left: 35px; }
+
+@media (max-width: 767px) {
+  .full-width {
+    padding: 40px 0; }
+    .full-width.definition-section .left {
+      margin-bottom: 20px;
+      text-align: left; }
+    .full-width.definition-section .right {
+      padding-left: 0;
+      border-left: 0;
+      border-top: 1px solid #318CC0;
+      padding-top: 20px; } }
+
+.form-intro {
+  text-align: center;
+  margin-bottom: 40px; }
 
 .main-button {
-  padding: 10px 30px;
+  padding: 10px 50px;
   color: white;
-  background: transparent;
-  border: 1px solid white; }
+  background: #505CA2;
+  border: 1px solid #505CA2;
+  border-radius: 25px;
+  display: inline-block;
+  margin-bottom: 50px; }
   .main-button:hover, .main-button:focus {
     text-decoration: none;
     color: white;
-    background: rgba(255, 255, 255, 0.3); }
+    background: #141727; }
 
 .page-heading {
   color: white; }
 
+.section-subheading {
+  font-size: 20px;
+  margin-bottom: 40px; }
+
 .form-group label {
-  color: white; }
+  color: black; }
+
+.floating-label-form-group span {
+  color: #EE5948; }
 
 .form-control {
   padding: 25px 12px; }
 
-a.back-home {
-  color: #999;
-  margin-left: 30px; }
-  a.back-home:hover, a.back-home:focus {
+.page-intro {
+  background: #EE5948;
+  text-align: center;
+  padding: 50px 0;
+  margin-bottom: 50px; }
+  .page-intro h1 {
+    text-align: center;
     color: white; }
 
-a.back-link {
-  color: #999;
-  margin-top: 40px;
-  display: inline-block; }
+.section-summary {
+  font-style: italic;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0 0 60px; }
+
+.bio-image {
+  margin-bottom: 30px;
+  max-width: 100%; }
+
+.about-top {
+  border-left: 5px solid #57BBAB;
+  padding-left: 20px;
+  margin-bottom: 30px; }
+
+.name, .title {
+  font-weight: bold; }
+
+.name {
+  font-size: 1.6em; }
+
+.bio {
+  font-style: italic;
+  margin-bottom: 30px; }
+
+ul.resources-list {
+  margin: 30px 0;
+  padding: 0; }
+  ul.resources-list li {
+    list-style: none;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px; }
+    ul.resources-list li p {
+      margin: 0 0 5px; }
+    ul.resources-list li .main-button {
+      margin: 10px 0 0;
+      padding: 10px 30px; }
+    ul.resources-list li:last-child {
+      border-bottom: 0;
+      margin-bottom: 40px; }
+  ul.resources-list h4 {
+    border-bottom: 1px solid #999;
+    font-weight: bold;
+    padding-bottom: 20px;
+    margin-bottom: 20px; }
+
+footer {
+  background: #000;
+  color: #777;
+  padding: 20px 0; }
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px; }
+
+.center {
+  text-align: center; }

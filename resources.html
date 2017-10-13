@@ -1,0 +1,55 @@
+---
+layout: bootstrap
+title: Resources
+permalink: /resources/
+---
+
+<div class="page-intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Resources</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-sm-push-3">
+            <div class="form-intro">
+                    <p><strong>Ready to download our resources? Great!</strong></p>
+                    <p>All we ask is that you let us know who you are.</p>
+            </div>
+            <form name="resources" action="/resources/download/" netlify>
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>Name <span>*</span></label>
+                        <input type="text" class="form-control" placeholder="Name" id="name" name="name" required data-validation-required-message="Please enter your name.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>Email Address <span>*</span></label>
+                        <input type="email" class="form-control" placeholder="Email Address" id="email" name="email" required data-validation-required-message="Please enter your email.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Phone Number <span>*</span></label>
+                            <input type="phone" class="form-control" placeholder="Phone Number" id="phone" name="phone" required data-validation-required-message="Please enter your phone number.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                <br>
+                <!-- <div id="success"></div> -->
+                <div class="row">
+                    <div class="form-group col-xs-12">
+                        <button type="submit" class="main-button">Get Resources</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
