@@ -224,3 +224,48 @@ body {
 
 .center {
   text-align: center; }
+
+#fm-medium-embed {
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center; }
+  #fm-medium-embed a {
+    color: #505CA2; }
+
+.fm-post-wrapper {
+  display: inline-block;
+  border-radius: 3px;
+  width: 300px;
+  padding: 15px 15px 20px;
+  background: #fff;
+  text-align: left;
+  margin: 10px;
+  border: 1px solid #bbb;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25); }
+
+.fm-post-title {
+  font-size: 20px;
+  font-weight: bold; }
+
+.fm-post-sub-title {
+  min-height: 120px;
+  line-height: 24px;
+  color: #333; }
+
+.fm-medium-profile {
+  margin: 10px 0 50px;
+  padding: 5px;
+  display: block; }
+
+.fm-medium-profile a {
+  padding: 10px 50px;
+  color: white !important;
+  background: #505CA2;
+  border: 1px solid #505CA2;
+  border-radius: 25px;
+  display: inline-block;
+  margin-bottom: 50px; }
+  .fm-medium-profile a:hover, .fm-medium-profile a:focus {
+    text-decoration: none;
+    color: white !important;
+    background: #141727; }

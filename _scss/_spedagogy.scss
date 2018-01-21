@@ -269,3 +269,59 @@ html {
   .center {
       text-align: center;
   }
+
+
+//   Medium embed styles
+  
+  #fm-medium-embed{
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+    a {
+        color: $purple;
+    }
+  }
+  
+  .fm-post-wrapper{
+    display: inline-block;
+    border-radius: 3px;
+    width: 300px;
+    padding: 15px 15px 20px;
+    background: #fff;
+    text-align: left;
+    margin: 10px;
+    border: 1px solid #bbb;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.25);
+  }
+  
+  .fm-post-title{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .fm-post-sub-title{
+    min-height: 120px;
+    line-height: 24px;
+    color: #333;
+  }
+  
+  .fm-medium-profile{
+    margin: 10px 0 50px;
+    padding: 5px;
+    display: block;
+  }
+  
+  .fm-medium-profile a {
+    padding: 10px 50px;
+    color: white !important;
+    background: $purple;
+    border: 1px solid $purple;
+    border-radius: 25px;
+    display: inline-block;
+    margin-bottom: 50px;
+    &:hover, &:focus {
+        text-decoration: none;
+        color: white !important;
+        background: $darkpurple;
+    }
+  }

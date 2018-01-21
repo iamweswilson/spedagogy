@@ -1,0 +1,34 @@
+---
+layout: bootstrap
+title: Blog
+permalink: /blog/
+---
+<div class="page-intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Blog</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div id="fm-medium-embed"></div>
+        </div>
+    </div>
+</div>
+
+<script src="//data.feedmirror.com/embed.js"></script>
+<script>
+  var fmSettings = {
+    feedURL: 'https://data.feedmirror.com/-L3PVmHpzUJ0JKPrECt7.json',
+    integration: 'medium-embed',
+    linkOutText: 'Continue reading...',
+    linkToMediumProfileText: 'Subscribe on Medium',
+    postsCount: 12,
+    element: 'fm-medium-embed'
+  };
+  feedmirror.initialize(fmSettings);
+</script>
